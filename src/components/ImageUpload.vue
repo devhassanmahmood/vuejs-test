@@ -3,10 +3,9 @@
     <v-row>
       <v-col>
         <v-text-field
-          v-model="image"
           label="Upload Image"
           type="file"
-          @change="uploadImage"
+          @input="uploadImage"
         />
       </v-col>
     </v-row>
@@ -68,8 +67,7 @@ export default {
       };
     },
     removeImage() {
-     this.imageUrl = null
-     
+      this.imageUrl = null
     },
   },
 };
