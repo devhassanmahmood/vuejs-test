@@ -9,7 +9,7 @@
                 <v-row class="d-flex">
                   <h2>{{ $t('message.user_profile') }}</h2>
                 </v-row>
-                <v-row class="justify-center">
+                <v-row class="d-flex justify-center set-width">
                   <v-col cols="12" sm="8" md="8" class="mt-6">
                     <v-text-field 
                       label= "First Name"
@@ -32,7 +32,7 @@
                   </v-col>
                   <v-col cols="12" sm="4" md="4">
                     <ImageUpload
-                    @setImage = 'setImage'
+                      @setImage = 'setImage'
                     />
                   </v-col>
                 </v-row>
@@ -101,3 +101,12 @@ export default {
   },
 }
 </script>
+<style scoped>
+
+@media only screen and (max-width: 1200px) {
+  .set-width {
+    flex-direction: column !important;
+    overflow-y: auto;
+  }
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <v-container class="border">
+  <v-container class="border" style="min-width: 175px">
     <v-row>
       <v-col>
         <v-text-field
